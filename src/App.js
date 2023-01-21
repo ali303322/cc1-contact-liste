@@ -1,24 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {Routes,Route} from 'react-router-dom';
+import Paff from './Compenent/Paff';
+import Pajouter from './Compenent/Pajouter';
+import Head from './Compenent/Head';
+import Context from './Compenent/Context';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Context>
+
+        <Head/>
+
+        <Routes>
+            <Route path='/' element={<Paff/>}/>
+            <Route path='/ajouter' element={<Pajouter/>}/>
+
+        </Routes>
+    </Context>
   );
 }
 
