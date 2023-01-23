@@ -86,4 +86,10 @@ div .lien:hover{
     background: #ccc;
   }
 
-  
+  @media (max-width: 1000px){
+    div .lien{
+        width: 300px;
+        margin-right: 20px;
+
+    }
+  }

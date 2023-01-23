@@ -17,7 +17,7 @@ export default function Affichage() {
         }).map((el)=>{
             return (
                 <div className='aff'>
-                    <div>
+                    <div className='txt'>
                         <h3><span>Nom : </span> {el.name}</h3>
                         <h3><span>Numero : </span> {el.num}</h3>
                         <h3><span>Ville : </span> {el.ville}</h3>
