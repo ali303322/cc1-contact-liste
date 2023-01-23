@@ -32,4 +32,9 @@ h1{
     color: aliceblue;
 }
 
-
+@media (max-width: 600px){
+    body{
+        background-image: none;
+        background-color: orange;
+    }
+}
